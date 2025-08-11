@@ -27,7 +27,7 @@ console.log('API URL:', apiUrl);
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
               What&apos;s next? {apiUrl}
 
-              Hi Nuno23
+              Hi Nuno234
             </p>
             <ul>
               {resources.map(({ href, text, icon }) => (
