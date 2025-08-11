@@ -5,6 +5,16 @@ export function Welcome() {
   const apiUrl = import.meta.env.VITE_API_URL;
 console.log('API URL:', apiUrl);
 
+function test() {
+  var unusedVar = 42;      // 'unusedVar' is defined but never used
+  console.log("Hello");    // 'console.log' may be disallowed depending on rules
+  if (1 == "1") {          // '==' should be '===' for strict equality
+    return true;
+  }
+}
+
+test();
+
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
