@@ -3,17 +3,7 @@ import logoLight from "./logo-light.svg";
 
 export function Welcome() {
   const apiUrl = import.meta.env.VITE_API_URL;
-console.log('API URL:', apiUrl);
-
-function test() {
-  var unusedVar = 42;      // 'unusedVar' is defined but never used
-  console.log("Hello");    // 'console.log' may be disallowed depending on rules
-  if (1 == "1") {          // '==' should be '===' for strict equality
-    return true;
-  }
-}
-
-test();
+  console.log('API URL:', apiUrl);
 
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
@@ -37,7 +27,7 @@ test();
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
               What&apos;s next? {apiUrl}
 
-              Hi Nuno2345555
+              w
             </p>
             <ul>
               {resources.map(({ href, text, icon }) => (
