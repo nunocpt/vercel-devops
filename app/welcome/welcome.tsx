@@ -1,15 +1,11 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
-interface Resource {
-  text: string;
-}
-
 export function Welcome() {
   const apiUrl = import.meta.env.VITE_API_URL;
   console.log('API URL:', apiUrl);
 
-  const resources: Resource = [
+  const resources = [
   {
     href: "https://reactrouter.com/docs",
     text: 123, // <-- TypeScript error: number is not assignable to string
